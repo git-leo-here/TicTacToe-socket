@@ -1,0 +1,183 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap";
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  margin: 20px;
+  font-family: Poppins, sans-serif;
+}
+
+#root {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+}
+
+.header-title {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 3rem;
+}
+
+.cell {
+  background-color: #ffac3f;
+  border: 1px solid #999;
+  border-radius: .5rem;
+  place-content: center;
+  width: 150px;
+  height: 150px;
+  font-size: 4rem;
+  transition: background-color .2s ease-in-out;
+  display: grid;
+}
+
+.cell:hover {
+  cursor: pointer;
+  background-color: #e29939;
+}
+
+@media (width <= 700px) {
+  .cell {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+main {
+  flex: 1;
+  place-content: center;
+  display: grid;
+}
+
+.main-section {
+  background-color: var(--secondary-color);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  display: grid;
+}
+
+.room-code {
+  text-align: center;
+  color: #fff;
+  background-color: #7f7fd5;
+  border-radius: 1rem;
+  margin: 20px;
+  padding: 10px;
+}
+
+.current-player {
+  text-align: center;
+  color: #fff;
+  background-color: #86a8e7;
+  border-radius: 1rem;
+  margin: 20px;
+  padding: 10px;
+}
+
+.status {
+  text-align: center;
+  color: #fff;
+  border-radius: 1rem;
+  margin: 20px;
+  padding: 10px;
+}
+
+.joinRoomModal-container {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: fixed;
+}
+
+.joinRoomModal-container:after {
+  content: "";
+  opacity: .4;
+  z-index: -1;
+  background: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.joinRoomModal-card {
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.joinRoomModal-card-title {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.joinRoomModal-card-input {
+  border: 3px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 16px;
+  outline: none;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.joinRoomModal-card-button {
+  background-color: var(--secondary-color);
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 16px;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.joinRoomModal-card-button:hover {
+  cursor: pointer;
+}
+
+.join-room-btn {
+  background-color: var(--secondary-color);
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 16px;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.App {
+  background: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 20px;
+  padding: 1rem;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

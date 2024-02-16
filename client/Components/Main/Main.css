@@ -1,0 +1,41 @@
+main {
+    flex: 1;
+    display: grid;
+    place-content: center;
+  }
+  
+  .main-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--secondary-color);
+    gap: 0.5rem;
+  }
+
+  .room-code{
+
+    margin : 20px;
+    text-align: center;
+    background-color: #7F7FD5;
+    color: white;
+    border-radius: 1rem;
+    padding: 10px;
+  }
+
+  .current-player{
+    margin : 20px;
+    text-align: center;
+    background-color: #86A8E7;
+    color: white;
+    border-radius: 1rem;
+    padding: 10px;
+  }
+
+  .status{
+    margin : 20px;
+    text-align: center;
+    /* background-color: green; */
+    color: white;
+    border-radius: 1rem;
+    padding: 10px;
+  }
